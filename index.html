@@ -5,32 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BroMMO Tools</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* Hiệu ứng glow theo chuột */
-    body {
-      cursor: none; /* Ẩn cursor mặc định */
-    }
-    .cursor-glow {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: rgba(99, 102, 241, 0.3); /* Indigo */
-      box-shadow: 0 0 30px rgba(99, 102, 241, 0.6);
-      pointer-events: none;
-      transform: translate(-50%, -50%);
-      transition: width 0.2s, height 0.2s, background 0.2s;
-      z-index: 9999;
-    }
-    .cursor-glow.active {
-      width: 60px;
-      height: 60px;
-      background: rgba(168, 85, 247, 0.3); /* Purple */
-      box-shadow: 0 0 40px rgba(168, 85, 247, 0.7);
-    }
-  </style>
+
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
 
@@ -101,7 +76,7 @@
     document.addEventListener("mousedown", () => cursor.classList.add("active"));
     document.addEventListener("mouseup", () => cursor.classList.remove("active"));
   </script>
-  <style>
+<style>
   .cursor-glow {
     position: fixed;
     top: 0;
