@@ -44,6 +44,30 @@
       <li>Easy to use, install once and use forever</li>
     </ul>
 
+    <h4 class="text-xl font-semibold mb-3">💻 Commands</h4>
+    <div class="relative bg-gray-900 text-green-400 rounded-lg shadow mb-8">
+      <!-- nút copy -->
+      <button onclick="copyCommands()" 
+              class="absolute top-2 right-2 bg-gray-700 text-white px-3 py-1 rounded text-sm hover:bg-gray-600">
+        Copy
+      </button>
+      <!-- nội dung command -->
+      <pre class="p-4 overflow-x-auto"><code id="commands">
+    pip install colorama playwright beautifulsoup4
+    playwright install
+    python bot.py
+    </code></pre>
+    </div>
+    <script>
+    function copyCommands() {
+      const text = document.getElementById("commands").innerText;
+      navigator.clipboard.writeText(text);
+      alert("✅ Commands copied!");
+    }
+    </script>
+
+    
+
     <!-- Tutorial Section -->
     <h3 class="text-xl font-semibold mb-3">🎥 Tutorial</h3>
     <div class="mb-8">
