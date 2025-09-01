@@ -2,82 +2,57 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Server Minecraft A5_</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #1e1e1e;
-      color: #ffffff;
-      padding: 20px;
-      line-height: 1.6;
-    }
-    h1, h2 {
-      color: #00ffff;
-    }
-    .section {
-      margin-bottom: 40px;
-    }
-    img {
-      max-width: 100%;
-      border: 2px solid #fff;
-      border-radius: 10px;
-    }
-    code {
-      background-color: #333;
-      padding: 2px 6px;
-      border-radius: 4px;
-      color: #00ffcc;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page - My Tools</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800 font-sans">
 
-  <h1>🌍 Server Minecraft: A5_</h1>
+  <!-- Hero -->
+  <section class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-center py-20">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Chào mừng đến với Tools của mình 🚀</h1>
+    <p class="text-lg md:text-xl mb-6">Tổng hợp sản phẩm & kênh cộng đồng</p>
+    <div class="flex justify-center gap-4">
+      <a href="https://youtube.com/" target="_blank"
+         class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded-xl shadow hover:scale-105 transition">
+        📺 YouTube
+      </a>
+      <a href="https://t.me/" target="_blank"
+         class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded-xl shadow hover:scale-105 transition">
+        💬 Telegram
+      </a>
+    </div>
+  </section>
 
-  <div class="section">
-    <h2>📌 IP Máy chủ</h2>
-    <p><strong>Địa chỉ:</strong> <code>mc.squidinc.space:25145</code></p>
-  </div>
+  <!-- Products / Tools -->
+  <section class="max-w-5xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold text-center mb-12">Sản phẩm của mình</h2>
+    <div class="grid gap-6 md:grid-cols-3">
+      <!-- Tool 1 -->
+      <div class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Tool Auto Claim</h3>
+        <p class="text-gray-600 mb-4">Tự động claim faucet nhanh chóng & tiện lợi.</p>
+        <a href="#" class="text-indigo-600 font-medium hover:underline">Xem chi tiết →</a>
+      </div>
+      <!-- Tool 2 -->
+      <div class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Tool Dự đoán Tài/Xỉu</h3>
+        <p class="text-gray-600 mb-4">Phân tích dữ liệu và đưa ra dự đoán thông minh.</p>
+        <a href="#" class="text-indigo-600 font-medium hover:underline">Xem chi tiết →</a>
+      </div>
+      <!-- Tool 3 -->
+      <div class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Tool Minecraft</h3>
+        <p class="text-gray-600 mb-4">Các mod/datapack giúp chơi Minecraft thú vị hơn.</p>
+        <a href="#" class="text-indigo-600 font-medium hover:underline">Xem chi tiết →</a>
+      </div>
+    </div>
+  </section>
 
-  <div class="section">
-    <h2>🧭 Cách vào server</h2>
-
-    <h3>💻 Trên PC:</h3>
-    <img src="9a10a25f-b759-40d2-a301-8175603751ad.png" alt="Hướng dẫn PC">
-
-    <h3>📱 Trên PE (điện thoại):</h3>
-    <img src="2e796522-7a95-4ba1-b521-ebb55052eb53.png" alt="Hướng dẫn PE">
-  </div>
-
-  <div class="section">
-    <h2>📜 Các lệnh cơ bản</h2>
-    <pre>
----- Các Lệnh ----
-
-- Lệnh TPA:
-  /tpa <tên người chơi>         -> gửi lời mời dịch chuyển tới ai đó
-  /tpahere <tên người chơi>     -> gửi lời mời ai đó dịch chuyển tới chỗ mình
-  /tpaccept                     -> Đồng ý yêu cầu dịch chuyển
-  /back                         -> Quay về chỗ vừa chết (hoặc vừa dịch chuyển)
-
-- Lệnh home:
-  /sethome                      -> Tạo nhà tại vị trí đang đứng
-  /home                         -> Dịch chuyển về nhà đã set
-
-- Lệnh team:
-  /team create <tên team>       -> Tạo team
-  /team name <tên team>         -> Đặt tên hiển thị
-  /team invite <tên người chơi> -> Mời ai đó vô team
-  /team join <tên team>         -> Vào team đã được mời
-  /team echest                  -> Mở rương dùng chung
-  /team sethome                 -> Tạo nhà cho team
-  /team home                    -> Quay về nhà của team
-  /team setwarp <tên khu vực>  -> Đặt một khu vực
-  /team warp <tên khu vực>     -> Dịch chuyển tới khu vực
-  /team color <màu>            -> Đổi màu team (ví dụ: red, blue,...)
-    </pre>
-  </div>
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 text-center py-6">
+    <p>&copy; 2025 My Tools. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
